@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
 }
 
@@ -69,28 +69,38 @@ body{
     transform: rotate(45deg);
 }
 
-.row{
+.row {
     height: 25px;
     line-height: 25px;
     position: relative;
     background-color: #151515;
 }
 
-hr{
+.row.footer {
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
     display: block;
     border: none;
     height: 5px;
     margin: 0;
-    background: -webkit-gradient(radial, 0% 50%, 0, 40% 50%, 200, from(#151515), to(transparent)) #00244a;
+    background: #2196f3;
 }
 
 
-p{
+p {
     color: #bbb;
     margin: 0px;
 }
 
-h2{
+h1 {
     text-align: center;
     color: #bbb;
     margin: 0px;
@@ -100,9 +110,41 @@ h2{
     background-color: #151515;
 }
 
-br{
+br {
     height: 25px;
     line-height: 25px;
     position: relative;
     background-color: #151515;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px;
+}
+
+.btn-danger {
+    color: #232323;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-weight: bold;
+}
+
+#displayDevMode {
+
+
 }
