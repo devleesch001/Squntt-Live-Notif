@@ -9,11 +9,9 @@ window.onload = function () {
     $(document).ready(function () {
 
         if ($('#devMode').is(':checked')) {
-            $("#testSound").show();
-            $("#testNotify").show();
+            $("#displayDevMode").show();
         } else {
-            $("#testSound").hide();
-            $("#testNotify").hide();
+            $("#displayDevMode").hide();
         }
 
 
@@ -35,11 +33,9 @@ window.onload = function () {
             });
 
             if (checked) {
-                $("#testSound").show();
-                $("#testNotify").show();
+                $("#displayDevMode").show();
             } else {
-                $("#testSound").hide();
-                $("#testNotify").hide();
+                $("#displayDevMode").hide();
             }
         });
 

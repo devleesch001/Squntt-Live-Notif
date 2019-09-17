@@ -53,17 +53,6 @@ hr{
     background: -webkit-gradient(radial, 0% 50%, 0, 40% 50%, 200, from(#00244a), to(transparent)) #151515;
 }
 
-.is-online .title {
-    font-size: 23px;
-    width: 290px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
-    white-space: nowrap;
-    float: left;
-    margin-left: 40px;
-}
-
 .row.header {
     color: #bbb;
     overflow: hidden;
