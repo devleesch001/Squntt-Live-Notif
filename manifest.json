@@ -1,6 +1,6 @@
 {
   "name": "Squntt - Live",
-  "version": "0.95",
+  "version": "0.95.1",
   "description": "Extension de Squntt pour être informé quand sa Stream ça mère",
   "icons": {
     "16": "assets/icons/squntt_icon16.png",

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../assets/css/options.css">
+    <link rel="stylesheet" type="text/css" href="options.css">
 
     <script src="../assets/js/jquery.js"></script>
     <script src="../init.js"></script>
@@ -11,39 +11,38 @@
     <script src="../assets/js/options.js"></script>
 </head>
 <body>
-<fieldset>
-    <legend>
-        <b>Réglage des notifications</b>
-    </legend>
 
+<h2>Réglage des notifications</h2>
+
+<div class="row">
     <label class="form-switch">
+        <p>Annonce des streams</p>
         <input type="checkbox" id="streamsNotify">
-        <i></i>
-        <em>Annonce des streams</em>
+        <span class="checkmark"></span>
     </label>
-    <br>
+</div>
+<hr>
+<div class="row">
     <label class="form-switch">
+        <p>Jouer un son</p>
         <input type="checkbox" id="playSound">
-        <i></i>
-        <em>Jouer un son</em>
+        <span class="checkmark"></span>
     </label>
-    <br>
+</div>
+<hr>
+<div class="row">
     <label class="form-switch">
+        <p>Mode développeur</p>
         <input type="checkbox" id="devMode">
-        <i></i>
-        <em>Mode développeur</em>
+        <span class="checkmark"></span>
     </label>
+</div>
 
-    <br>
-
-    <div>
-        <button type="button" id="testSound">Test de son</button>
-    </div>
-
-    <div>
-        <button id="testNotify">Test de Notification</button>
-    </div>
-</fieldset>
+<div id="displayDevMode">
+    <hr>
+    <button type="button" id="testSound">Test de son</button>
+    <button id="testNotify">Test de Notification</button>
+</div>
 
 </body>
 
