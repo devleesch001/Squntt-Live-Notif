@@ -21,8 +21,7 @@ window.onload = function () {
 
 let tickRate = 60 * 1000;
 
-let notif = new Audio("../assets/sounds/notif.mp3");
-// audio.volume = parseFloat(localStorage.volume) / 3.0;
+let notif = new Audio("/assets/sounds/notif.mp3");
 notif.volume = 1;
 let stream = [];
 
@@ -40,7 +39,7 @@ let streamer = [];
 
 let notificationConf = [];
 
-notificationConf.imageUrl = '../assets/images/Squntt_paperwall.png';
-notificationConf.iconUrl = '../assets/icons/squntt_icon48.png';
+notificationConf.imageUrl = '/assets/images/notifPaperwall.png';
+notificationConf.iconUrl = '/assets/icons/squntt_icon48.png';
 notificationConf.title = "Squntt_ live !";
 notificationConf.message = "Je stream.";
