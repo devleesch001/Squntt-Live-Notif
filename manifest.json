@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Squntt - Live",
-  "version": "0.98.4.0",
+  "version": "0.98.5.0",
   "description": "Extension de Squntt pour être informé quand ça Stream sa mère",
   "icons": {
     "16": "assets/icons/squntt_icon16.png",
@@ -11,16 +11,19 @@
   },
   "author": "devleesch",
   "permissions": [
-    "background",
     "notifications",
-    "storage"
+    "storage",
+	"background",
+    "*://*.twitch.tv/*",
+    "*://*.youtube.com/*",
+    "*://twitter.com/*"
   ],
   "options_ui": {
     "page": "views/options/options.html"
   },
   "background": {
     "scripts": [
-      "assets/js/jquery.js",
+      "assets/js/jquery-3.4.1.min.js",
       "init.js",
       "app.js",
       "background.js"
@@ -30,6 +33,5 @@
   "browser_action": {
     "default_title": "Squntt_ - Hors-Ligne",
     "default_popup": "views/popup/popup.html"
-  },
-  "update_url": "https://clients2.google.com/service/update2/crx"
+  }
 }

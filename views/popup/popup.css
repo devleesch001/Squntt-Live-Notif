@@ -1,16 +1,8 @@
-@font-face {
-    font-family: "Suprem";
-    src: url("/assets/fonts/SUPRRG__.TTF") format("truetype");
-}
-
-@font-face {
-    font-family: "Penis";
-    src: url("/assets/fonts/Penis Typography Black.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 @font-face {
     font-family: "Short Baby";
-    src: url("/assets/fonts/Short Baby.ttf") format("truetype");
+    src: url("../../assets/fonts/Short Baby.ttf") format("truetype");
 }
 
 html, body {
@@ -36,8 +28,7 @@ div {
 
 div.header {
     text-align: center;
-    vertical-align: center;
-    background-image: url("/assets/images/rowHeader.png");
+    background-image: url("../../assets/images/rowHeader.png");
 }
 
 img.image {
@@ -214,11 +205,7 @@ a.btn i {
     padding-left: 75px;
 }
 
-span.settings {
-    position: absolute;
-    top: 5px;
-    padding-left: 0px;
-}
+
 
 span.settings:hover .fa-circle {
     color: rgba(0, 0, 0, 0);
@@ -231,18 +218,26 @@ span.settings:hover .fa-cog {
 span.settings .fa-cog {
     font-size: 15px;
     color: #1f5dcd;
-    margin-top: -1px;
     -webkit-transition: color .2s;
     transition: color .2s;
-    padding-top: 1px;
 }
 
 span.settings .fa-circle {
     color: #f9f9f9;
     font-size: 23px;
-    padding-top: 1px;
-    margin-top: -1px;
     -webkit-transition: color .2s;
     transition: color .2s;
 }
 
+span.title {
+    font-family: sans-serif;
+}
+
+span.settings {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 23px;
+    line-height: 23px;
+
+}
