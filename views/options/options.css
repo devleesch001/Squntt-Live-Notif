@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    overflow: hidden;
 }
 
 /* Customize the label (the container) */
@@ -135,6 +136,7 @@ br {
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin: 5px;
+    cursor: pointer
 }
 
 .btn-danger {
@@ -144,7 +146,24 @@ br {
     font-weight: bold;
 }
 
-#displayDevMode {
+a:visited{
+    color: #999;
+}
 
+a#devName:hover{
+    color: #dc3545;
+}
 
+.form-switch input:checked ~ .checkmark:hover {
+    background-color: #696969;
+}
+
+.left {
+    left: 5px;
+    position: absolute;
+}
+
+.right {
+    right: 5px;
+    position: absolute;
 }

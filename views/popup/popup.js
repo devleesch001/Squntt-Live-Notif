@@ -34,3 +34,10 @@ $(document).ready(function () {
         chrome.runtime.openOptionsPage();
     });
 });
+
+chrome.storage.local.get('devMode', function (result) {
+    if (!result.devMode) {
+        document.addEventListener('contextmenu', event => event.preventDefault()); // remove Rightclick
+    }
+});
+onselectstart = (e) => {e.preventDefault()}

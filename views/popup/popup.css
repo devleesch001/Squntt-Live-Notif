@@ -1,16 +1,8 @@
-@font-face {
-    font-family: "Suprem";
-    src: url("../assets/fonts/SUPRRG__.TTF") format("truetype");
-}
-
-@font-face {
-    font-family: "Penis";
-    src: url("../assets/fonts/Penis Typography Black.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 @font-face {
     font-family: "Short Baby";
-    src: url("../assets/fonts/Short Baby.ttf") format("truetype");
+    src: url("../../assets/fonts/Short Baby.ttf") format("truetype");
 }
 
 html, body {
@@ -21,7 +13,6 @@ html, body {
 }
 
 span.streamer {
-    /*font-family: 'Suprem';*/
     font-family: 'Short Baby';
     font-size: 36px;
     font-style: oblique;
@@ -37,15 +28,14 @@ div {
 
 div.header {
     text-align: center;
-    vertical-align: center;
-    background-image: url("../assets/images/rowHeader.png");
+    background-image: url("../../assets/images/rowHeader.png");
 }
 
 img.image {
     position: relative;
 }
 
-hr{
+hr {
     display: block;
     border: none;
     height: 5px;
@@ -67,10 +57,6 @@ hr{
 
 }
 
-span.i {
-
-}
-
 .row .content-title i {
     position: absolute;
     float: left;
@@ -86,7 +72,7 @@ span.i {
 }
 
 .is-online .title {
-    font-size: 23px;
+    font-size: 16px;
     width: 290px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -105,12 +91,12 @@ span.i {
 
 .is-online .game,
 .is-online .viewers {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .is-online .viewers .far,
-.is-online .game .fas{
-    padding: 0 10px 0 10px;
+.is-online .game .fas {
+    padding: 0 5px 0 10px;
     color: #ffffff;
 }
 
@@ -119,7 +105,7 @@ span.i {
     color: #bbb;
 }
 
-.row.footer{
+.row.footer {
     height: 45px;
     line-height: 45px;
     position: relative;
@@ -210,6 +196,7 @@ a.btn i {
 .footer > div:not(.last) {
     padding-right: 20px;
 }
+
 .footer > div.first {
     padding-left: 25px;
 }
@@ -218,16 +205,7 @@ a.btn i {
     padding-left: 75px;
 }
 
-span.settings {
-    position: absolute;
-    top: 5px;
-    padding-left: 0px;
-    /*top: 5px;*/
-    /*left: 2px;*/
 
-    /*height: 20px;*/
-    /*border-radius: 100%;*/
-}
 
 span.settings:hover .fa-circle {
     color: rgba(0, 0, 0, 0);
@@ -240,17 +218,26 @@ span.settings:hover .fa-cog {
 span.settings .fa-cog {
     font-size: 15px;
     color: #1f5dcd;
-    margin-top: -1px;
-    -webkit-transition: color .2s;
-    transition: color .2s;
-    padding-top: 1px;
-}
-span.settings .fa-circle {
-    color: #f9f9f9;
-    font-size: 23px;
-    padding-top: 1px;
-    margin-top: -1px;
     -webkit-transition: color .2s;
     transition: color .2s;
 }
 
+span.settings .fa-circle {
+    color: #f9f9f9;
+    font-size: 23px;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+span.title {
+    font-family: sans-serif;
+}
+
+span.settings {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 23px;
+    line-height: 23px;
+
+}

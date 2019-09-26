@@ -3,7 +3,9 @@ window.onload = function () {
         document.getElementById("devMode").checked = result.devMode;
         document.getElementById("streamsNotify").checked = result.notif;
         document.getElementById("playSound").checked = result.playSound;
-        // document.getElementById("playSound").checked = true;
+
+        document.getElementById("version").innerHTML = chrome.runtime.getManifest().version;
+        onselectstart = (e) => {e.preventDefault()}
     });
 
     $(document).ready(function () {
@@ -12,6 +14,7 @@ window.onload = function () {
             $("#displayDevMode").show();
         } else {
             $("#displayDevMode").hide();
+            document.addEventListener('contextmenu', event => event.preventDefault())
         }
 
 
@@ -36,6 +39,7 @@ window.onload = function () {
                 $("#displayDevMode").show();
             } else {
                 $("#displayDevMode").hide();
+                document.addEventListener('contextmenu', event => event.preventDefault())
             }
         });
 
@@ -51,3 +55,4 @@ window.onload = function () {
 
     });
 };
+
