@@ -3,7 +3,7 @@ Extension permettant d'être notifier quand Squntt Stream
 
 Télécharger ici redirection automatique http://squntt.omniumcorp.fr
 
-Chrome Store https://chrome.google.com/webstore/detail/squntt-live/
+Chrome Store https://chrome.google.com/webstore/detail/squntt-live/hgfbkbnbhlidmkcmbfhmlhhpiheloafk
 
 Addon FireFox https://addons.mozilla.org/fr/firefox/addon/squntt-live/
 
