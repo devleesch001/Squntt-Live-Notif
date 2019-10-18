@@ -1,7 +1,7 @@
 getStreamStatus()
     .then(function (response) {
-        let elm = document.getElementById("info");
-        updateIcon(response["stream"]);
+        // let elm = document.getElementById("info");
+        updateBadge(response["stream"]);
         if (response["stream"] === null) {
         } else {
             streamer.name = response.stream.channel["display_name"];
@@ -11,8 +11,6 @@ getStreamStatus()
 
             $(document).ready(function () {
                 $(".streamer").text(streamer.name);
-                $("#live-Status").attr('src', '../assets/icons/live_on.png');
-                $(".title").text(streamer.title.replace("[FR] GOTAGA ► ", ""));
                 $(".title").attr("title", streamer.title);
                 $(".game-name").text(streamer.game);
                 $(".game-name").attr("title", streamer.game);
@@ -40,4 +38,4 @@ chrome.storage.local.get('devMode', function (result) {
         document.addEventListener('contextmenu', event => event.preventDefault()); // remove Rightclick
     }
 });
-onselectstart = (e) => {e.preventDefault()}
+onselectstart = (e) => {e.preventDefault()};

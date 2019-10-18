@@ -35,7 +35,7 @@ stream.ClientID = "98pfvdmm2imwdl4qe2gdqp35cth9m4";
 // stream.urlApi = "https://api.twitch.tv/kraken/streams/103590726"; // devleesch
 // stream.ClientID = "qoi5aq1rriu2tpg0z89v3lej1cpjh1";
 
-let streamer = [];
+let streamer = []; // init var usable for api
 
 let notificationConf = [];
 

@@ -24,7 +24,7 @@ function getStreamStatus() {
     });
 }
 
-function updateIcon(stream) {
+function updateBadge(stream) {
     if (stream === null) {
         chrome.browserAction.setBadgeText({text: 'OFF'});
         chrome.browserAction.setBadgeBackgroundColor({color: '#920002'});

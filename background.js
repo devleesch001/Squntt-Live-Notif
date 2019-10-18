@@ -2,7 +2,7 @@ function while_() {
     getStreamStatus()
         .then(function (response) {
 
-            updateIcon(response["stream"]); //update icon
+            updateBadge(response["stream"]); //update icon
 
 
             chrome.storage.local.get('devMode', function (result) {
