@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Squntt - Live",
-  "version": "0.98.5.1",
+  "version": "0.98.5.2",
   "description": "Extension de Squntt pour être informé quand ça Stream sa mère",
   "icons": {
     "16": "assets/icons/squntt_icon16.png",
