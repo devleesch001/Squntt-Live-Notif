@@ -18,7 +18,7 @@ function getStreamStatus() {
                 console.log(jqXHR);
                 console.log(textStatus);
                 console.log(errorThrown);
-                reject('erreur');
+                reject('error');
             }
         });
     });
